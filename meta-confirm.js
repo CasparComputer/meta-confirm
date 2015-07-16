@@ -12,7 +12,7 @@ function findInPage(complete_url, searchType, searchForTag, searchContent, cb) {
     request(complete_url, function (error, response, body) {
 
             if (error) {
-                cb(false, error);
+                cb(error, null);
 
             }
             else {
@@ -24,10 +24,10 @@ function findInPage(complete_url, searchType, searchForTag, searchContent, cb) {
                 var cnt = body.split(specificTag).length;
 
                 if (cnt === 1) {
-                    cb(false, null);
+                    cb(null, false);
                 }
                 else {
-                    cb(true, null);
+                    cb(null, true);
 
                 }
             }

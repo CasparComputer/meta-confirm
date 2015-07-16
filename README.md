@@ -26,10 +26,9 @@ var metaconfirm = require('./../meta-confirm');
 var url = "http://www.example.com";         // complete url including http:
 var searchType = "name";                    // tag type to look for ie: "name" , "property", "rel"
 var searchTag = "description";              // descriptor to look for ie: "robots", "stylesheet", "og:title"
-var content = "Our Website Description";    // contect within tag to look for
+var content = "Our Website Description";    // content within tag to look for
 
 // create a callback to receive the results when completed
-
 function callback(res, error) {
 
     console.log("Response: " + res + " : " + searchTag);

@@ -7,13 +7,14 @@ describe("A Core Homepage Test", function () {
     "use strict";
 
     var resFinal = null;
+    var resError= null;
 
     beforeEach(function (done) {
 
         setTimeout(function () {
 
             resFinal = null;
-
+            resError = null;
             //
             //   Change these to your settings.
             //
@@ -28,9 +29,10 @@ describe("A Core Homepage Test", function () {
             //
 
 
-            metaconfirm.FindInPage(url, searchType, searchTag, content, function callback(result) {
+            metaconfirm.FindInPage(url, searchType, searchTag, content, function callback(error, result) {
 
                 resFinal = result;
+                resError = error;
 
                 done();
 
@@ -46,12 +48,6 @@ describe("A Core Homepage Test", function () {
     });
 
 });
-
-
-
-
-
-
 
 
 
