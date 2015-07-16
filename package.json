@@ -1,6 +1,6 @@
 {
   "name": "meta-confirm",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "meta-confirm was intended to allow a simple way to test or confirm the existence of specific meta tag and description on a web page",
   "main": "index.js",
   "preferGlobal": "false",
@@ -18,16 +18,11 @@
     "url": "https://github.com/CasparComputer/meta-confirm"
   },
   "keywords": [
-    "meta",
-    "test",
-    "confirm"
-  ],
-  "author": "Mike Caspar <mike@caspar.com> (http://www.caspar.com)",
-  "keywords": [
     "meta-tag",
     "test",
     "confirm"
   ],
+  "author": "Mike Caspar <mike@caspar.com> (http://www.caspar.com)",
   "bugs": {
     "url": "https://github.com/casparcomputer/meta-confirm/issues"
   },
