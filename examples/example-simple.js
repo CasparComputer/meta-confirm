@@ -15,9 +15,8 @@ var content = "Caspar Computer Services Inc.  Providing Innovative Solutions sin
 //
 //
 
+// create a callback to receive the results when completed
 
-
-// callback created before calling it later per js lint
 function callback(res, error) {
     "use strict";
 
@@ -27,7 +26,5 @@ function callback(res, error) {
 }
 
 metaconfirm.FindInPage(url, searchType, searchTag, content, callback);
-
-
 
 

@@ -28,6 +28,15 @@ var searchType = "name";                    // tag type to look for ie: "name" ,
 var searchTag = "description";              // descriptor to look for ie: "robots", "stylesheet", "og:title"
 var content = "Our Website Description";    // contect within tag to look for
 
+// create a callback to receive the results when completed
+
+function callback(res, error) {
+
+    console.log("Response: " + res + " : " + searchTag);
+    console.log("Error: " + error);
+
+}
+
 
 ```
 
