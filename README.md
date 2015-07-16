@@ -13,9 +13,27 @@
 
 ### For a sample test running in mocha, see [mochaSingleTests.js](https://github.com/CasparComputer/meta-confirm/blob/master/test/mochaSingleTests.js)
 
-To use the library...
+Make sure the module is installed
 
-    var metaconfirm = require('meta-confirm');
+For Development as part of Testing....
+
+    npm install meta-confirm --save-dev
+    
+    
+    
+As part of an Application or Module
+
+    npm install meta-confirm --save
+     
+
+ 
+```javascript
+
+var metaconfirm = require('./../meta-confirm');
+
+```
+    
+
 
 
 
