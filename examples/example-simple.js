@@ -1,6 +1,6 @@
 // example-simple.js
 
-var metaconfirm = require('./../index');
+var metaconfirm = require('./../meta-confirm');
 
 var searchTag = "description";
 var searchType = "name";

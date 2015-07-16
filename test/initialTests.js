@@ -1,7 +1,7 @@
 // initialTests.js
 
 var expect = require('chai').expect;
-var metaconfirm = require('../index');
+var metaconfirm = require('../meta-confirm');
 
 describe("A Core Homepage Test", function () {
 
