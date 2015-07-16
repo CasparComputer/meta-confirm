@@ -3,30 +3,6 @@
 var expect = require('chai').expect;
 var metaconfirm = require('../meta-confirm');
 
-
-describe("a test", function () {
-
-    var foo = false;
-
-    beforeEach(function (done) {
-
-        setTimeout(function () {
-            foo = true;
-
-            // complete the async beforeEach
-            done();
-
-        }, 500);
-
-    });
-
-    it("should pass", function () {
-        expect(foo).equals(true);
-    });
-
-});
-
-
 describe("A Core Homepage Test", function () {
 
 
