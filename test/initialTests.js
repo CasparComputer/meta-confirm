@@ -4,15 +4,13 @@ var expect = require('chai').expect;
 var metaconfirm = require('../meta-confirm');
 
 describe("A Core Homepage Test", function () {
-
+    "use strict";
 
     var resFinal = null;
-
 
     beforeEach(function (done) {
 
         setTimeout(function () {
-
 
             resFinal = null;
 
@@ -22,7 +20,6 @@ describe("A Core Homepage Test", function () {
 
 
             metaconfirm.FindInPage("http://www.caspar.com", searchType, searchTag, content, function callback(result) {
-                "use strict";
 
                 resFinal = result;
 
