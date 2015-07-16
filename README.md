@@ -14,7 +14,8 @@
 
 ## For a sample from normal code, see  [example-simple](https://github.com/CasparComputer/meta-confirm/blob/master/examples/example-simple.js)
 
-## For a sample test running in mocha, see [example-mocha]()
+## For a sample test running in mocha, see [example-mocha](https://github.com/CasparComputer/meta-confirm/blob/master/test/mochaSingleTests.js)
+
 
 
 
