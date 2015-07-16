@@ -21,20 +21,20 @@ or
  
 ```javascript
 
-var metaconfirm = require('./../meta-confirm');
-
-var url = "http://www.example.com";         // complete url including http:
-var searchType = "name";                    // tag type to look for ie: "name" , "property", "rel"
-var searchTag = "description";              // descriptor to look for ie: "robots", "stylesheet", "og:title"
-var content = "Our Website Description";    // content within tag to look for
-
-// create a callback to receive the results when completed
-function callback(res, error) {
-
-    console.log("Response: " + res + " : " + searchTag);
-    console.log("Error: " + error);
-
-}
+    var metaconfirm = require('./../meta-confirm');
+    
+    var url = "http://www.example.com";         // complete url including http:
+    var searchType = "name";                    // tag type to look for ie: "name" , "property", "rel"
+    var searchTag = "description";              // descriptor to look for ie: "robots", "stylesheet", "og:title"
+    var content = "Our Website Description";    // content within tag to look for
+    
+    // create a callback to receive the results when completed
+    function callback(res, error) {
+    
+        console.log("Response: " + res + " : " + searchTag);
+        console.log("Error: " + error);
+    
+    }
 
 
 ```
@@ -43,56 +43,54 @@ function callback(res, error) {
 
 ```javascript
 
-var expect = require('chai').expect;
-var metaconfirm = require('../meta-confirm');
-
-describe("A Core Homepage Test", function () {
-
-    var resFinal = null;
-    var resError= null;
-
-    beforeEach(function (done) {
-
-        setTimeout(function () {
-
-            resFinal = null;
-            resError = null;
-            //
-            //   Change these to your settings.
-            //
-
-            var url = "http://www.caspar.com";
-            var searchTag = "description";
-            var searchType = "name";
-            var content = "Caspar Computer Services Inc.  Providing Innovative Solutions since 1984. Passionate about Agile Development";
-
-            //
-            // Change to your own settings
-            //
-
-
-            metaconfirm.FindInPage(url, searchType, searchTag, content, function callback(error, result) {
-
-                resFinal = result;
-                resError = error;
-
-                done();
-
-            });
-
-
-        }, 500);
-
+    var expect = require('chai').expect;
+    var metaconfirm = require('../meta-confirm');
+    
+    describe("A Core Homepage Test", function () {
+    
+        var resFinal = null;
+        var resError= null;
+    
+        beforeEach(function (done) {
+    
+            setTimeout(function () {
+    
+                resFinal = null;
+                resError = null;
+                //
+                //   Change these to your settings.
+                //
+    
+                var url = "http://www.caspar.com";
+                var searchTag = "description";
+                var searchType = "name";
+                var content = "Caspar Computer Services Inc.  Providing Innovative Solutions since 1984. Passionate about Agile Development";
+    
+                //
+                // Change to your own settings
+                //
+    
+    
+                metaconfirm.FindInPage(url, searchType, searchTag, content, function callback(error, result) {
+    
+                    resFinal = result;
+                    resError = error;
+    
+                    done();
+    
+                });
+    
+    
+            }, 500);
+    
+        });
+    
+        it("should pass", function () {
+            expect(resFinal).equals(true, "Expecting a True result from Meta Search");
+        });
+    
     });
-
-    it("should pass", function () {
-        expect(resFinal).equals(true, "Expecting a True result from Meta Search");
-    });
-
-});
-
-
-
+    
 
 ```
 
@@ -102,6 +100,65 @@ describe("A Core Homepage Test", function () {
 
 ### For a sample test running in mocha, see [mochaSingleTests.js](https://github.com/CasparComputer/meta-confirm/blob/master/test/mochaSingleTests.js)
 
+# an example used from my own site...  (nodeJS and Express).
+
+    
+    // initialTests.js
+    
+    var expect = require('chai').expect;
+    var metaconfirm = require('meta-confirm');
+    
+    var url = 'http://localhost:' + testPort;
+    
+    var standardDescription = 'Caspar Computer Services Inc.  Providing Innovative Solutions since 1984. Passionate about Agile Development';
+    
+    describe("Metatag Checks", function () {
+    
+        var resFinal = null;
+        var resError = null;
+    
+        beforeEach(function (done) {
+            resFinal = null;  // setup so that it's visible
+            resError = null;  //setup so that it's visible
+    
+            setTimeout(function () {
+                done();
+            });
+    
+        }, 500);
+    });
+    
+    it("should have the Caspar Computer Services Description Tag", function () {
+    
+        var searchType = "name";
+        var searchTag = "description";
+        var content = "Caspar Computer Services Inc.  Providing Innovative Solutions since 1984. Passionate about Agile Development";
+    
+    
+        metaconfirm.FindInPage(url, searchType, searchTag, content, function callback(error, result) {
+            resError = error;
+            resFinal = result;
+    
+            expect(resFinal).equals(true, "Expecting a True result from Meta Search");
+        });
+    
+    });
+    
+    it("should have distribution global", function () {
+    
+        var searchType = "name";
+        var searchTag = "distribution";
+        var content = "global";
+    
+        metaconfirm.FindInPage(url, searchType, searchTag, content, function callback(error, result) {
+    
+            resError = error;
+            resFinal = result;
+    
+    
+            expect(resFinal).equals(true, "Expecting a True result from Meta Search");
+        });
+    });
 
 
 

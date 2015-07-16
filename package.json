@@ -16,7 +16,8 @@
   "keywords": [
     "meta-tag",
     "test",
-    "confirm"
+    "confirm",
+    "express"
   ],
   "author": "Mike Caspar <mike@caspar.com> (http://www.caspar.com)",
   "bugs": {
