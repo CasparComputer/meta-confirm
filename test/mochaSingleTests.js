@@ -14,10 +14,18 @@ describe("A Core Homepage Test", function () {
 
             resFinal = null;
 
+            //
+            //   Change these to your settings.
+            //
+
             var url = "http://www.caspar.com";
             var searchTag = "description";
             var searchType = "name";
             var content = "Caspar Computer Services Inc.  Providing Innovative Solutions since 1984. Passionate about Agile Development";
+
+            //
+            // Change to your own settings
+            //
 
 
             metaconfirm.FindInPage(url, searchType, searchTag, content, function callback(result) {
