@@ -26,7 +26,7 @@ function findInPage(complete_url, searchType, searchForTag, searchContent, cb) {
 
             }
         }
-    )
+    );
 
 }
 

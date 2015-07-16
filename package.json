@@ -2,14 +2,16 @@
   "name": "meta-confirm",
   "version": "0.0.1",
   "description": "meta-confirm was intended to allow a simple way to test or confirm the existence of specific meta tag and description on a web page",
-  "main": "meta-confirm.js",
+  "main": "index.js",
   "preferGlobal": "false",
-  "bin": { "mata-confirm": "meta-confirm.js" },
+  "bin": {
+    "mata-confirm": "index.js"
+  },
   "engines": {
     "node": ">=0.10.3 <= 0.12.7"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,11 @@
     "confirm"
   ],
   "author": "Mike Caspar <mike@caspar.com> (http://www.caspar.com)",
-  "keywords": ["meta-tag", "test", "confirm"],
+  "keywords": [
+    "meta-tag",
+    "test",
+    "confirm"
+  ],
   "bugs": {
     "url": "https://github.com/casparcomputer/meta-confirm/issues"
   },
