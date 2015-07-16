@@ -13,19 +13,14 @@
 
 ### For a sample test running in mocha, see [mochaSingleTests.js](https://github.com/CasparComputer/meta-confirm/blob/master/test/mochaSingleTests.js)
 
-Make sure the module is installed
-
-For Development as part of Testing....
+Depending on if you need as part of your testing framework or as part of an application, use the appropriate npm install:
 
     npm install meta-confirm --save-dev
-    
-    
-    
-As part of an Application or Module
+or
 
     npm install meta-confirm --save
      
-
+##Using the module
  
 ```javascript
 
