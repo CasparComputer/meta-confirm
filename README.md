@@ -12,7 +12,4 @@
 
 
 
-[meta-confirm github page](http://casparcomputer.github.io/meta-confirm/)
-
-
 # meta-confirm
