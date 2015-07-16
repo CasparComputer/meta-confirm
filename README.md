@@ -9,9 +9,6 @@
 * Can be run as part of an application to check sites on an ongoing basis for quality.
 * Can be used as part of test framework (mocha example provided) to ensure meta tag quality during development.
 
-### For a sample from normal code, see  [example-simple.js](https://github.com/CasparComputer/meta-confirm/blob/master/examples/example-simple.js)
-
-### For a sample test running in mocha, see [mochaSingleTests.js](https://github.com/CasparComputer/meta-confirm/blob/master/test/mochaSingleTests.js)
 
 Depending on if you need as part of your testing framework or as part of an application, use the appropriate npm install:
 
@@ -26,8 +23,18 @@ or
 
 var metaconfirm = require('./../meta-confirm');
 
+var url = "http://www.example.com";         // complete url including http:
+var searchType = "name";                    // tag type to look for ie: "name" , "property", "rel"
+var searchTag = "description";              // descriptor to look for ie: "robots", "stylesheet", "og:title"
+var content = "Our Website Description";    // contect within tag to look for
+
+
 ```
+
     
+### For a sample from normal code, see  [example-simple.js](https://github.com/CasparComputer/meta-confirm/blob/master/examples/example-simple.js)
+
+### For a sample test running in mocha, see [mochaSingleTests.js](https://github.com/CasparComputer/meta-confirm/blob/master/test/mochaSingleTests.js)
 
 
 
