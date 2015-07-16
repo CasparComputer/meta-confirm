@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/CasparComputer/meta-confirm.svg)](https://travis-ci.org/CasparComputer/meta-confirm.svg)
 
-<h2> Please note, This App is not ready for primetime.. 0.0.1 until first version is ready.
+<h2> Please note, This App is not ready for primetime.. 0.0.2 until first version is ready.
 
 * meta-confirm.  Designed to do easy and quick testing of web pages for specific tags.
 
