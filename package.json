@@ -3,7 +3,7 @@
   "version": "0.0.5",
   "description": "meta-confirm was intended to allow a simple way to test or confirm the existence of specific meta tag and description on a web page",
   "main": "meta-confirm.js",
-   "engines": {
+  "engines": {
     "node": ">=0.10.3 <= 0.12.7"
   },
   "scripts": {
@@ -24,12 +24,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "request": "~2.58.0",
-    "winston": "1.0.1"
-  },
+      "request": "~2.58.0"
+    },
   "devDependencies": {
     "chai": "^3.0.0",
     "mocha": "^2.2.5"
-
   }
 }

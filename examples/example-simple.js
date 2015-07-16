@@ -2,28 +2,23 @@
 
 var metaconfirm = require('./../meta-confirm');
 
-var winston = require('winston');
-
-var searchTag = "description";
+var url = "http://www.caspar.com";
 var searchType = "name";
+var searchTag = "description";
 var content = "Caspar Computer Services Inc.  Providing Innovative Solutions since 1984. Passionate about Agile Development";
 
-var logger = new (winston.Logger)({
-        transports: [
-                new (winston.transports.Console)()
-        ]
-});
-
+// callback created before calling it later per js lint
 
 function callback(res, error) {
-        "use strict";
+    "use strict";
 
-        logger.info("Response: " + res + " : " + searchTag);
-        logger.info("Error: " + error);
+    console.log("Response: " + res + " : " + searchTag);
+    console.log("Error: " + error);
 
 }
 
-metaconfirm.FindInPage("http://www.caspar.com", searchType, searchTag, content, callback);
+metaconfirm.FindInPage(url, searchType, searchTag, content, callback);
+
 
 
 

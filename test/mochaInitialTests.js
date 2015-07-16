@@ -1,4 +1,4 @@
-// initialTests.js
+// mochaInitialTests.js
 
 var expect = require('chai').expect;
 var metaconfirm = require('../meta-confirm');
