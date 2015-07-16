@@ -17,7 +17,7 @@ or
 
     npm install meta-confirm --save
      
-##Using the module
+##Using the module (application)
  
 ```javascript
 
@@ -38,6 +38,64 @@ function callback(res, error) {
 
 
 ```
+
+##Using the module (mocha)
+
+```javascript
+
+var expect = require('chai').expect;
+var metaconfirm = require('../meta-confirm');
+
+describe("A Core Homepage Test", function () {
+
+    var resFinal = null;
+    var resError= null;
+
+    beforeEach(function (done) {
+
+        setTimeout(function () {
+
+            resFinal = null;
+            resError = null;
+            //
+            //   Change these to your settings.
+            //
+
+            var url = "http://www.caspar.com";
+            var searchTag = "description";
+            var searchType = "name";
+            var content = "Caspar Computer Services Inc.  Providing Innovative Solutions since 1984. Passionate about Agile Development";
+
+            //
+            // Change to your own settings
+            //
+
+
+            metaconfirm.FindInPage(url, searchType, searchTag, content, function callback(error, result) {
+
+                resFinal = result;
+                resError = error;
+
+                done();
+
+            });
+
+
+        }, 500);
+
+    });
+
+    it("should pass", function () {
+        expect(resFinal).equals(true, "Expecting a True result from Meta Search");
+    });
+
+});
+
+
+
+
+```
+
 
     
 ### For a sample from normal code, see  [example-simple.js](https://github.com/CasparComputer/meta-confirm/blob/master/examples/example-simple.js)
