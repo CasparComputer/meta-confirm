@@ -9,6 +9,13 @@ var request = require('request');
 function findInPage(complete_url, searchType, searchForTag, searchContent, cb) {
 
 
+    if (complete_url === null)
+    {
+        cb(new Error("url cannot be null"), null);
+        return;
+    }
+
+
     request(complete_url, function (error, response, body) {
 
             if (error) {
