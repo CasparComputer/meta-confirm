@@ -15,3 +15,7 @@ notifications:
   email:
     - mike@caspar.com
 
+before_script:
+    - npm install jshint -g
+
+
