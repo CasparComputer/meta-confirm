@@ -23,7 +23,7 @@ describe('meta-confirm Exceptions', function () {
                 }
 
                 if (result) {
-                    expect(result).equals(true, "Expecting a True result from Meta Search");
+                    expect(result).equals(true, "Expecting a false result from Meta Search");
                     done();
                 }
 
@@ -47,7 +47,7 @@ describe('meta-confirm Exceptions', function () {
                 }
 
                 if (result) {
-                    expect(result).equals(true, "Expecting a True result from Meta Search");
+                    expect(result).equals(false, "Expecting a false result from Meta Search");
                     done();
                 }
 
@@ -72,7 +72,7 @@ describe('meta-confirm Exceptions', function () {
                 }
 
                 if (result) {
-                    expect(result).equals(true, "Expecting a True result from Meta Search");
+                    expect(result).equals(false, "Expecting false result from Meta Search");
                     done();
                 }
 
@@ -96,7 +96,7 @@ describe('meta-confirm Exceptions', function () {
                 }
 
                 if (result) {
-                    expect(result).equals(true, "Expecting a True result from Meta Search");
+                    expect(result).equals(false, "Expecting a false result from Meta Search");
                     done();
                 }
 
