@@ -30,13 +30,16 @@ or
     var metaconfirm = require('meta-confirm');
     var expect = require('chai').expect;
     
+    
+    
      describe('Mike Test', function () {
     
         describe('findInPage', function () {
     
             it('should work', function (done) {
     
-                var url = "http://www.caspar.com";
+                var url = "http://localhost:" + testPort;
+                            
                 var searchType = "name";
                 var searchTag = "description";
                 var content = "Caspar Computer Services Inc.  Providing Innovative Solutions since 1984. Passionate about Agile Development";
