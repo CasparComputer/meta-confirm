@@ -13,7 +13,10 @@
     "prepublish": "npm run build # also runs npm run prebuild",
     "prebuild": "npm run test # also runs npm run pretest",
     "pretest": "npm run lint",
-    "build": "npm run env"
+    "build": [
+      "npm run env",
+      "npm install jshint --global"
+    ]
   },
   "repository": {
     "type": "git",
