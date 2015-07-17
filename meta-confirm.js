@@ -7,12 +7,12 @@ var request = require('request');
 
 
 function findInPage(complete_url, searchType, searchTag, searchContent, cb) {
+    "use strict";
 
     if (complete_url === null) {
         cb(new Error("url cannot be null"), null);
         return;
     }
-
 
     request(complete_url, function (error, response, body) {
 

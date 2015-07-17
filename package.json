@@ -8,11 +8,11 @@
   },
   "scripts": {
     "test": "NODE_ENV=test ./node_modules/.bin/mocha --recursive --reporter spec --timeout 3000",
-    "lint": "jshint **.js",
+    "lint": "jshint **.js --verbose",
     "env": "env",
     "prepublish": "npm install jshint --global # also runs npm run prebuild",
     "prebuild": "npm run test # also runs npm run pretest",
-    "pretest": "npm run lint"
+    "pretest": "jshint **.js --verbose"
   },
   "repository": {
     "type": "git",
