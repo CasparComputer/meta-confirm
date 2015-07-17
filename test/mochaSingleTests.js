@@ -1,55 +1,33 @@
-// mochaInitialTests.js
-
+var metaconfirm = require('../../meta-confirm');
 var expect = require('chai').expect;
-var metaconfirm = require('../meta-confirm');
 
-describe("A Core Homepage Test", function () {
-    "use strict";
 
-    var resFinal = null;
-    var resError= null;
 
-    beforeEach(function (done) {
+describe('Mike Test', function () {
 
-        setTimeout(function () {
+    describe('findInPage', function () {
 
-            resFinal = null;
-            resError = null;
-            //
-            //   Change these to your settings.
-            //
+        it('should work', function (done) {
 
             var url = "http://www.caspar.com";
-            var searchTag = "description";
             var searchType = "name";
+            var searchTag = "description";
             var content = "Caspar Computer Services Inc.  Providing Innovative Solutions since 1984. Passionate about Agile Development";
 
-            //
-            // Change to your own settings
-            //
 
+            metaconfirm.FindInPage(url, searchType, searchTag, content, function callback(err, result) {
+                //if we have no result and no error, it's not completed!
 
-            metaconfirm.FindInPage(url, searchType, searchTag, content, function callback(error, result) {
+                if (err) {
+                    throw err;
+                }
 
-                resFinal = result;
-                resError = error;
-
-                done();
+                if (result) {
+                    expect(result).equals(true, "Expecting a True result from Meta Search");
+                    done();
+                }
 
             });
-
-
-        }, 500);
-
+        });
     });
-
-    it("should pass", function () {
-        expect(resFinal).equals(true, "Expecting a True result from Meta Search");
-    });
-
 });
-
-
-
-
-
