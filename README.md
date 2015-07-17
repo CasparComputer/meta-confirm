@@ -40,12 +40,12 @@ or
     
                 var url = "http://localhost:" + testPort;
                             
-                var searchType = "name";
+                var searchMetaType = "name";
                 var searchTag = "description";
                 var content = "Caspar Computer Services Inc.  Providing Innovative Solutions since 1984. Passionate about Agile Development";
     
     
-                metaconfirm.FindInPage(url, searchType, searchTag, content, function callback(err, result) {
+                metaconfirm.FindInPage(url, searchMetaType, searchTag, content, function callback(err, result) {
                     //if we have no result and no error, it's not completed!
     
                     if (err) {

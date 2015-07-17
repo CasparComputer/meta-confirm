@@ -1,4 +1,5 @@
-## 0.0.8 - July 16, 2015
+## 0.0.8 - July 17, 2015
+- return errors for null variables instead of forcing doing a request that will not work
 - changed readme to not send people to www.caspar.com but to localhost instead (in the node sample)
 
 ## 0.0.7 - July 16, 2015
