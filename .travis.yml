@@ -16,6 +16,8 @@ notifications:
     - mike@caspar.com
 
 before_script:
-    - npm install jshint -g
+  - npm install jshint --global
+  - npm install
+
 
 
