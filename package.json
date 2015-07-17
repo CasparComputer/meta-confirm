@@ -7,7 +7,7 @@
     "node": ">=0.10.3 <= 0.12.7"
   },
   "scripts": {
-    "test": "npm run env && NODE_ENV=test ./node_modules/.bin/mocha --recursive --reporter spec --timeout 3000",
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha --recursive --reporter spec --timeout 3000",
     "lint": "jshint **.js",
     "env": "env",
     "prepublish": "npm install jshint --global # also runs npm run prebuild",
