@@ -2,23 +2,23 @@ var metaconfirm = require('../../meta-confirm');
 var expect = require('chai').expect;
 
 
-describe('meta-confirm happy path', function () {
+describe('meta-confirm Exceptions', function () {
 
-    describe('normal page request', function () {
+    describe('parameter exceptions', function () {
 
-        it('should work', function (done) {
+        it('return an error if sending a null url without waiting for the timeout', function (done) {
 
-            var url = "http://www.caspar.com";
+            var url = null;
             var searchType = "name";
             var searchTag = "description";
             var content = "Caspar Computer Services Inc.  Providing Innovative Solutions since 1984. Passionate about Agile Development";
-
 
             metaconfirm.FindInPage(url, searchType, searchTag, content, function callback(err, result) {
                 //if we have no result and no error, it's not completed!
 
                 if (err) {
-                    throw err;
+                    expect(err.message).equals("url cannot be null");
+                    done();
                 }
 
                 if (result) {
@@ -28,6 +28,7 @@ describe('meta-confirm happy path', function () {
 
             });
         });
+
 
     });
 });
