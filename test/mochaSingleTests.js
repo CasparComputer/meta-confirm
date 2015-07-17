@@ -3,6 +3,7 @@ var expect = require('chai').expect;
 
 
 describe('meta-confirm happy path', function () {
+    "use strict";
 
     describe('normal page request', function () {
 

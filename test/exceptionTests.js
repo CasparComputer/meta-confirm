@@ -3,6 +3,7 @@ var expect = require('chai').expect;
 
 
 describe('meta-confirm Exceptions', function () {
+    "use strict";
 
     describe('parameter exceptions', function () {
 

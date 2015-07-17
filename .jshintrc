@@ -46,7 +46,6 @@
   "browser": true,
   "browserify": false,
   "couch": false,
-  "devel": true,
   "dojo": false,
   "jasmine": false,
   "jquery": false,
@@ -63,5 +62,6 @@
   "worker": false,
   "wsh": false,
   "yui": false,
-  "globals": {}
+  "globals": {
+    }
 }

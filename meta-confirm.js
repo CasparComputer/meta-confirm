@@ -2,7 +2,6 @@
 
 var exports = module.exports = {};
 
-
 var request = require('request');
 
 
@@ -22,9 +21,7 @@ function findInPage(complete_url, searchType, searchTag, searchContent, cb) {
                 }
                 else {
 
-
                     var specificTag = '<meta ' + searchType + '="' + searchTag + '" content="' + searchContent + '">';
-
 
                     var cnt = body.split(specificTag).length;
 
