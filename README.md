@@ -25,7 +25,10 @@ or
 
 ### [For a sample test running in mocha, see mochaSingleTests.js](https://github.com/CasparComputer/meta-confirm/blob/master/test/mochaSingleTests.js)
 
-### [![nodeJS and Express example from my own site](https://github.com/CasparComputer/meta-confirm/blob/master/examples/example_from_caspar.js)    
+### Sample from my own site
+### (nodeJS and express
+
+    [![](https://github.com/CasparComputer/meta-confirm/blob/master/examples/casparsample.js)    
    
     
 
