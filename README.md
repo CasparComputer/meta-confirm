@@ -2,12 +2,8 @@
 
 # meta-confirm
 
-[![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
-[![Linux Build][travis-image]][travis-url]
-
-
 [![Build Status](https://travis-ci.org/CasparComputer/meta-confirm.svg)](https://travis-ci.org/CasparComputer/meta-confirm.svg)
+[![NPM Version](http://img.shields.io/npm/v/meta-confirm.svg?style=flat)](https://www.npmjs.org/package/meta-confirm)
 
 ## meta-confirm.  Designed to do easy and quick testing of web pages for specific tags.
 
