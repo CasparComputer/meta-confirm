@@ -14,6 +14,9 @@
     "prebuild": "npm run test # also runs npm run pretest",
     "pretest": "jshint **.js examples/**.js test/**.js"
   },
+  "bin": {
+    "coveralls": "./bin/coveralls.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/CasparComputer/meta-confirm"
@@ -30,6 +33,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "mocha-lcov-reporter": "0.0.2",
     "request": "~2.58.0"
   },
   "devDependencies": {
