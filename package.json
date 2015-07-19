@@ -10,7 +10,8 @@
     "test": "NODE_ENV=test ./node_modules/.bin/mocha --recursive --reporter spec --timeout 3000 && npm run coverage",
     "lint": "jshint **.js examples/**.js test/**.js",
     "env": "env",
-    "coverage": "ISTANBUL_REPORTERS=text-summary,html istanbul instrument **.js --output ./lcov.info && istanbul cover **.js",    "prepublish": "npm install jshint --global # also runs npm run prebuild",
+    "coverage": "ISTANBUL_REPORTERS=text-summary,html istanbul instrument **.js --output ./lcov.info && istanbul cover **.js",
+    "prepublish": "npm install jshint --global # also runs npm run prebuild",
     "prebuild": "npm run test # also runs npm run pretest",
     "pretest": "jshint **.js examples/**.js test/**.js"
   },
@@ -34,8 +35,9 @@
   },
   "devDependencies": {
     "chai": "^3.0.0",
-    "mocha": "^2.2.5",
     "istanbul": "~0.3.17",
-    "mocha-istanbul": "~0.2.0"
+    "mocha": "^2.2.5",
+    "mocha-istanbul": "~0.2.0",
+    "mocha-lcov-reporter": "0.0.2"
   }
 }
