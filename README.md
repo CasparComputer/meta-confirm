@@ -28,7 +28,7 @@ or
 ### Sample from my own site
 ### (nodeJS and express
 
-    [![](https://github.com/CasparComputer/meta-confirm/blob/master/examples/casparsample.js)    
+[![](https://github.com/CasparComputer/meta-confirm/blob/master/examples/casparsample.js)    
    
     
 
