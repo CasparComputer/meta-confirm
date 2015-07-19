@@ -12,7 +12,7 @@
     "env": "env",
     "prepublish": "npm install jshint --global # also runs npm run prebuild",
     "prebuild": "npm run test # also runs npm run pretest",
-    "pretest": "jshint **.js examples/**.js test/**.js",
+    "pretest": "jshint **.js examples/**.js test/**.js"
   },
   "repository": {
     "type": "git",
@@ -30,13 +30,11 @@
   },
   "license": "MIT",
   "dependencies": {
-    "coveralls": "^2.11.3",
-    "mocha-lcov-reporter": "0.0.2",
     "request": "~2.58.0"
   },
   "devDependencies": {
     "chai": "^3.0.0",
-    "istanbul": "^0.3.17",
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "mocha-lcov-reporter": "0.0.2"
   }
 }
