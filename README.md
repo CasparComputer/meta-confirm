@@ -2,6 +2,11 @@
 
 # meta-confirm
 
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
+[![Linux Build][travis-image]][travis-url]
+
+
 [![Build Status](https://travis-ci.org/CasparComputer/meta-confirm.svg)](https://travis-ci.org/CasparComputer/meta-confirm.svg)
 
 ## meta-confirm.  Designed to do easy and quick testing of web pages for specific tags.
