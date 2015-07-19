@@ -1,8 +1,5 @@
 // metaConfirm.js
 
-require('coveralls');
-
-
 var exports = module.exports = {};
 
 var request = require('request');

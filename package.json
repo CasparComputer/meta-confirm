@@ -12,7 +12,8 @@
     "env": "env",
     "prepublish": "npm install jshint --global # also runs npm run prebuild",
     "prebuild": "npm run test # also runs npm run pretest",
-    "pretest": "jshint **.js examples/**.js test/**.js"
+    "pretest": "jshint **.js examples/**.js test/**.js",
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
   },
   "devDependencies": {
     "chai": "^3.0.0",
+    "istanbul": "^0.3.17",
     "mocha": "^2.2.5"
   }
 }
