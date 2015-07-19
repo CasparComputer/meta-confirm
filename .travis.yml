@@ -21,5 +21,3 @@ artifacts upload \
   --bucket meta-confirm \
   log/ coverage/
 
-
-
