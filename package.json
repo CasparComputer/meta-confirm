@@ -34,10 +34,10 @@
     "request": "~2.58.0"
   },
   "devDependencies": {
-    "chai": "^3.0.0",
-    "istanbul": "~0.3.17",
-    "mocha": "^2.2.5",
-    "mocha-istanbul": "~0.2.0",
-    "mocha-lcov-reporter": "0.0.2"
+    "chai": "latest",
+    "istanbul": "latest",
+    "mocha": "latest",
+    "mocha-istanbul": "latest",
+    "mocha-lcov-reporter": "latest"
   }
 }
