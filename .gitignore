@@ -1,5 +1,5 @@
 .idea
 node_modules
 npm-debug.log
-coverage.json
 lcov.info
+coverage
