@@ -37,7 +37,7 @@ function findInPage(complete_url, searchMetaType, searchTag, searchContent, cb) 
                 }
                 else {
 
-                    var cnt = countMatches(body, searchMetaType, searchTag, searchContent);
+                    var cnt = countMatchesInString(body, searchMetaType, searchTag, searchContent);
 
                     if (cnt === 1) {
                         cb(null, false);
@@ -53,7 +53,7 @@ function findInPage(complete_url, searchMetaType, searchTag, searchContent, cb) 
 
 }
 
-function countMatches(body, searchMetaType, searchTag, searchContent) {
+function countMatchesInString(body, searchMetaType, searchTag, searchContent) {
     "use strict";
 
     var specificTag = '<meta ' + searchMetaType + '="' + searchTag + '" content="' + searchContent + '">';
