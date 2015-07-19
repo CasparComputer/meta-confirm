@@ -7,7 +7,7 @@
     "node": ">=0.10.3 <= 0.12.7"
   },
   "scripts": {
-    "test": "NODE_ENV=test ./node_modules/.bin/mocha --recursive --reporter spec --timeout 3000",
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha --recursive --reporter spec --timeout 3000 && npm run coverage",
     "lint": "jshint **.js examples/**.js test/**.js",
     "env": "env",
     "coverage": "ISTANBUL_REPORTERS=text-summary,html istanbul instrument **.js --output ./lcov.info && istanbul cover **.js",    "prepublish": "npm install jshint --global # also runs npm run prebuild",
