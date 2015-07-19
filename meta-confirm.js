@@ -37,9 +37,7 @@ function findInPage(complete_url, searchMetaType, searchTag, searchContent, cb) 
                 }
                 else {
 
-                    var specificTag = '<meta ' + searchMetaType + '="' + searchTag + '" content="' + searchContent + '">';
-
-                    var cnt = body.split(specificTag).length;
+                    var cnt = countMatches(body, searchMetaType, searchTag, searchContent);
 
                     if (cnt === 1) {
                         cb(null, false);
@@ -48,9 +46,19 @@ function findInPage(complete_url, searchMetaType, searchTag, searchContent, cb) 
                         cb(null, true);
 
                     }
+
                 }
             }
     );
+
+}
+
+function countMatches(body, searchMetaType, searchTag, searchContent) {
+    "use strict";
+
+    var specificTag = '<meta ' + searchMetaType + '="' + searchTag + '" content="' + searchContent + '">';
+
+    return body.split(specificTag).length;
 
 }
 
