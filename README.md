@@ -29,9 +29,7 @@ or
 
     var metaconfirm = require('meta-confirm');
     var expect = require('chai').expect;
-    
-    
-    
+        
     describe('Mike Test', function () {
         "use strict";
     
@@ -66,7 +64,3 @@ or
     });
 
 
-
-        
-    
-    
