@@ -19,6 +19,7 @@ env:
   - NODE_ENV="test"
 
 after_script:
+  - curl -sL https://raw.githubusercontent.com/travis-ci/artifacts/master/install | bash
   - artifacts upload
 
 
