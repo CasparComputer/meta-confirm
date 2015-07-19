@@ -15,6 +15,11 @@ notifications:
   email:
     - mike@caspar.com
 
+artifacts upload \
+  --key testkey \
+  --secret testSecret \
+  --bucket meta-confirm \
+  log/ coverage/
 
 
 
