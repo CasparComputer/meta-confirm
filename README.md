@@ -65,3 +65,4 @@ or
     });
 
 
+[![Coverage Status](https://coveralls.io/repos/CasparComputer/meta-confirm/badge.svg?branch=master&service=github)](https://coveralls.io/github/CasparComputer/meta-confirm?branch=master)
