@@ -9,12 +9,16 @@ node_js:
 
 branches:
   only:
-    - master
+  - master
 
 notifications:
   email:
     - mike@caspar.com
 
-artifacts upload
+env:
+  - NODE_ENV="test"
+
+after_script:
+  - artifacts upload
 
 
