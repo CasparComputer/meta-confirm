@@ -26,10 +26,9 @@ or
 ### [For a sample test running in mocha, see mochaSingleTests.js](https://github.com/CasparComputer/meta-confirm/blob/master/test/mochaSingleTests.js)
 
 ### nodeJS and express sample
-
-[![Sample from my own site]](https://github.com/CasparComputer/meta-confirm/blob/master/examples/casparsample.js)    
-   
-[![History]](https://github.com/CasparComputer/meta-confirm/blob/master/History.md)  
+  
+[![Sample from my own site](https://github.com/CasparComputer/meta-confirm/blob/master/examples/casparsample.js)](https://github.com/CasparComputer/meta-confirm/blob/master/examples/casparsample.js)
+  
        
         
     
