@@ -62,5 +62,4 @@ function countMatchesInString(body, searchMetaType, searchTag, searchContent) {
 
 }
 
-
 exports.FindInPage = findInPage;
