@@ -4,6 +4,9 @@ var expect = require('chai').expect;
 
 
 describe('Mike Test', function () {
+    "use strict";
+
+    var testPort = 9005;
 
     describe('findInPage', function () {
 
