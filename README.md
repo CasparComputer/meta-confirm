@@ -25,34 +25,12 @@ or
 
 ### [For a sample test running in mocha, see mochaSingleTests.js](https://github.com/CasparComputer/meta-confirm/blob/master/test/mochaSingleTests.js)
 
-### Sample from my own site
-### (nodeJS and express
+### nodeJS and express sample
 
-[![](https://github.com/CasparComputer/meta-confirm/blob/master/examples/casparsample.js)    
+[![Sample from my own site]](https://github.com/CasparComputer/meta-confirm/blob/master/examples/casparsample.js)    
    
-    
-
-## Revision History
-
-### 0.0.8 - July 17, 2015
-- When Null Data was being sent to any of the input fields, the module will still doing a request anyway. Adjusted to return param not null errors instead
-- changed readme to not send people to www.caspar.com but to localhost instead (in the node sample)
-- jshint for code consistency and safety
-
-### 0.0.7 - July 16, 2015
-- missed new README.md
-
-### 0.0.6 - July 16, 2015
-- simplified mocha test samples
-
-### 0.0.5 - July 16, 2015
-- Improve Tests 
-
-### 0.0.4 - July 16, 2015
-- pre-release 
-
-### 0.0.1  July 16, 2015
-- pre-release
+[![History]](https://github.com/CasparComputer/meta-confirm/blob/master/History.md)  
+       
         
     
     
