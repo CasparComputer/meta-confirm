@@ -17,6 +17,7 @@ notifications:
 
 env:
   - NODE_ENV="test"
+  - ARTIFACTS_BUCKET=meta-confirm
 
 after_script:
   - curl -sL https://raw.githubusercontent.com/travis-ci/artifacts/master/install | bash
