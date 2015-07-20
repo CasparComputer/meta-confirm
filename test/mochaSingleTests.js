@@ -1,3 +1,5 @@
+// This code is just here for reference for how to possibly use in your own app.
+
 //var metaconfirm = require('../../meta-confirm');
 //var expect = require('chai').expect;
 //

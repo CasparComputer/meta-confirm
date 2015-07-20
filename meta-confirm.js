@@ -29,7 +29,6 @@ function findInPage(completeUrl, searchMetaType, searchTag, searchContent, cb) {
     }
 
 
-
     request.get(completeUrl, function (error, response, body) {
 
                 if (error) {
