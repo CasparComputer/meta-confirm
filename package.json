@@ -39,6 +39,7 @@
     "istanbul": "latest",
     "mocha": "latest",
     "mocha-istanbul": "latest",
-    "mocha-lcov-reporter": "latest"
+    "mocha-lcov-reporter": "latest",
+    "pre-commit": "latest"
   }
 }
