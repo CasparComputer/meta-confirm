@@ -1,0 +1,8 @@
+--recursive
+--reporter spec
+--timeout 3000
+--ui bdd
+--require should
+--require chai.expect
+--require sinon
+

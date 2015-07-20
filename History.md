@@ -1,4 +1,9 @@
 ## Revision History
+### 0.0.10 - 
+
+
+### 0.0.9 - July 18, 2015
+- updated README to show code coverage results
 
 ### 0.0.8 - July 17, 2015
 - When Null Data was being sent to any of the input fields, the module will still doing a request anyway. Adjusted to return param not null errors instead
