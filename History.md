@@ -1,6 +1,6 @@
 ## Revision History
 ### 0.0.10 - 
-
+- used request.get instead of just request to allow easier test mocking with sinon
 
 ### 0.0.9 - July 18, 2015
 - updated README to show code coverage results
