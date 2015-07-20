@@ -5,10 +5,10 @@ var exports = module.exports = {};
 var request = require('request');
 
 
-function findInPage(complete_url, searchMetaType, searchTag, searchContent, cb) {
+function findInPage(completeUrl, searchMetaType, searchTag, searchContent, cb) {
     "use strict";
 
-    if (complete_url === null) {
+    if (completeUrl === null) {
         cb(new Error("url cannot be null"), null);
         return;
     }
@@ -29,7 +29,8 @@ function findInPage(complete_url, searchMetaType, searchTag, searchContent, cb) 
     }
 
 
-    request(complete_url, function (error, response, body) {
+
+    request.get(completeUrl, function (error, response, body) {
 
                 if (error) {
                     cb(error, null);

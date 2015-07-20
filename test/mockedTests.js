@@ -1,17 +1,17 @@
-var sinon = require('sinon');
 var metaconfirm = require('../../meta-confirm');
 var expect = require('chai').expect;
 var request = require('request');
+var sinon = require('sinon');
 
-
-describe('User Profile', function () {
+describe('Mocked Requests', function () {
     'use strict';
 
     before(function (done) {
 
         sinon
                 .stub(request, 'get')
-                .yields(null, null, '<meta name="rating" content="General">');
+                .yields(null, null, '<meta name="description" content="Caspar Computer Services Inc.  Providing Innovative Solutions since 1984. Passionate about Agile Development">');
+
         done();
     });
 
@@ -19,6 +19,7 @@ describe('User Profile', function () {
         request.get.restore();
         done();
     });
+
 
     var url = "http://www.caspar.com";
     var searchType = "name";
