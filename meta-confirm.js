@@ -8,31 +8,42 @@ var request = require('request');
 function findInPage(completeUrl, searchMetaType, searchTag, searchContent, cb) {
     "use strict";
 
-    var sendBackAnError = function (cb, errorMessage) {
+    function sendBackAnError(cb, errorMessage) {
 
         cb(new Error(errorMessage), null);
 
-    };
-
-    if (completeUrl === null) {
-
-        sendBackAnError(cb, "url cannot be null");
-        return;
 
     }
 
-    if (searchTag === null) {
-        sendBackAnError(cb, "searchTag cannot be null");
-        return;
+
+    function checkForNull() {
+
+        var errorString = null;
+
+        if (completeUrl === null) {
+            errorString = "url cannot be null";
+        }
+
+        if (searchTag === null) {
+            errorString = "searchTag cannot be null";
+        }
+
+        if (searchContent === null) {
+            errorString = "searchContent cannot be null";
+        }
+
+        if (searchMetaType === null) {
+            errorString = "searchMetaType cannot be null";
+        }
+
+        return errorString;
+
     }
 
-    if (searchContent === null) {
-        sendBackAnError(cb, "searchContent cannot be null");
-        return;
-    }
+    var errorString = checkForNull();
 
-    if (searchMetaType === null) {
-        sendBackAnError(cb, "searchMetaType cannot be null");
+    if (errorString !== null) {
+        sendBackAnError(cb, errorString);
         return;
     }
 
