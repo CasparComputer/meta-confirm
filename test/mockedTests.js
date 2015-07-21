@@ -3,7 +3,7 @@ var expect = require('chai').expect;
 var request = require('request');
 var sinon = require('sinon');
 
-describe('Mocked Requests', function () {
+describe('Mocked Requests to check validation logic', function () {
     'use strict';
 
     before(function (done) {
@@ -27,7 +27,7 @@ describe('Mocked Requests', function () {
     var content = "Caspar Computer Services Inc.  Providing Innovative Solutions since 1984. Passionate about Agile Development";
 
 
-    it('can get user profile', function (done) {
+    it('can find the data correctly', function (done) {
         metaconfirm.FindInPage(url, searchType, searchTag, content, function (err, result) {
                     if (err) {
                         done(err);
@@ -37,8 +37,22 @@ describe('Mocked Requests', function () {
                     done();
                 }
         );
-
     });
+
+    it('will not find the data if it does not exist', function (done) {
+        metaconfirm.FindInPage(url, searchType, searchTag + "X" , content, function (err, result) {
+                    if (err) {
+                        done(err);
+                    }
+
+                    expect(result).equals(false, "should get a false");
+                    done();
+                }
+        );
+    });
+
+
+
 
 });
 
