@@ -24,16 +24,16 @@ function findInPage(completeUrl, searchMetaType, searchTag, searchContent, cb) {
             errorString = "url cannot be null";
         }
 
+        if (searchMetaType === null) {
+            errorString = "searchMetaType cannot be null";
+        }
+
         if (searchTag === null) {
             errorString = "searchTag cannot be null";
         }
 
         if (searchContent === null) {
             errorString = "searchContent cannot be null";
-        }
-
-        if (searchMetaType === null) {
-            errorString = "searchMetaType cannot be null";
         }
 
         return errorString;
