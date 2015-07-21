@@ -1,4 +1,9 @@
 ## Revision History
+
+### 0.0.11 -
+- test coverage for request errors
+- test coverage for page not found through mocked instance
+
 ### 0.0.10 - 
 - used request.get instead of just request to allow easier test mocking with sinon
 
