@@ -6,16 +6,14 @@ var sinon = require('sinon');
 describe('Mocked Requests to check validation logic', function () {
     'use strict';
 
-    before(function (done) {
-
+    beforeEach(function (done) {
         sinon
                 .stub(request, 'get')
                 .yields(null, null, '<meta name="description" content="Caspar Computer Services Inc.  Providing Innovative Solutions since 1984. Passionate about Agile Development">');
-
         done();
     });
 
-    after(function (done) {
+    afterEach(function (done) {
         request.get.restore();
         done();
     });
@@ -40,7 +38,7 @@ describe('Mocked Requests to check validation logic', function () {
     });
 
     it('will not find the data if it does not exist', function (done) {
-        metaconfirm.FindInPage(url, searchType, searchTag + "X" , content, function (err, result) {
+        metaconfirm.FindInPage(url, searchType, searchTag + "X", content, function (err, result) {
                     if (err) {
                         done(err);
                     }
@@ -50,8 +48,6 @@ describe('Mocked Requests to check validation logic', function () {
                 }
         );
     });
-
-
 
 
 });
