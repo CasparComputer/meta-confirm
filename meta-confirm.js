@@ -15,6 +15,14 @@ function findInPage(completeUrl, searchMetaType, searchTag, searchContent, cb) {
         return;
     }
 
+    var emptyErrorMessage = validations.checkForEmptyParameters(completeUrl, searchMetaType, searchTag, searchContent);
+
+    if (emptyErrorMessage !== null) {
+        cb(emptyErrorMessage, null);
+        return;
+    }
+
+
     request.get(completeUrl, function (error, response, body) {
 
                 if (error) {
