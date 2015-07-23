@@ -15,7 +15,7 @@ function findInPage(completeUrl, searchMetaType, searchTag, searchContent, cb) {
 
     }
 
-    var errorString = checkForNull(completeUrl, searchMetaType, searchTag, searchContent);
+    var errorString = checkForNullParameters(completeUrl, searchMetaType, searchTag, searchContent);
 
     if (errorString !== null) {
         sendBackAnError(cb, errorString);
@@ -47,7 +47,7 @@ function findInPage(completeUrl, searchMetaType, searchTag, searchContent, cb) {
 }
 
 
-function checkForNull(completeUrl, searchMetaType, searchTag, searchContent) {
+function checkForNullParameters(completeUrl, searchMetaType, searchTag, searchContent) {
     'use strict';
 
     var errorString = null;
