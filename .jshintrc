@@ -17,7 +17,7 @@
   "quotmark": false,
   "undef": true,
   "unused": true,
-  "strict": true,
+  "strict": false,
   "asi": false,
   "boss": false,
   "debug": false,
