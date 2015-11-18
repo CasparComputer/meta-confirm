@@ -1,9 +1,10 @@
+"use strict";
+
 var metaconfirm = require('../../meta-confirm');
 var expect = require('chai').expect;
 
 
 describe('check for empty parameter exceptions', function () {
-    "use strict";
 
     it('return an error if sending an empty url without having to wait for the timeout', function (done) {
 
@@ -101,8 +102,6 @@ describe('check for empty parameter exceptions', function () {
         });
 
     });
-
-
 
 
 });

@@ -1,5 +1,7 @@
 // example-simple.js
 
+"use strict";
+
 var metaconfirm = require('./../meta-confirm');
 
 //
@@ -18,7 +20,6 @@ var content = "Caspar Computer Services Inc.  Providing Innovative Solutions sin
 // create a callback to receive the results when completed
 
 function callback(error, res) {
-    "use strict";
 
     console.log("Error: " + error);
     console.log("Response: " + res + " : " + searchTag);

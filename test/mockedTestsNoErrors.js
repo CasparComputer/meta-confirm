@@ -1,10 +1,11 @@
+'use strict';
+
 var metaconfirm = require('../../meta-confirm');
 var expect = require('chai').expect;
 var request = require('request');
 var sinon = require('sinon');
 
 describe('Mocked Requests to check validation logic', function () {
-    'use strict';
 
     beforeEach(function (done) {
         sinon

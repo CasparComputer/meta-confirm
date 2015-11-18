@@ -1,9 +1,10 @@
+'use strict';
+
 var metaconfirm = require('../../meta-confirm');
 var expect = require('chai').expect;
 
 
 describe('check for null parameter exceptions', function () {
-    "use strict";
 
     it('return an error if sending a null url without waiting for the timeout', function (done) {
 
