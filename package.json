@@ -4,7 +4,7 @@
   "description": "meta-confirm was intended to allow a simple way to test or confirm the existence of specific meta tag and description on a web page",
   "main": "meta-confirm.js",
   "engines": {
-    "node": ">=0.10.3 <= 0.12.7 || >=4.2.1 "
+    "node": ">=0.11.15 <= 0.12.7 || >=4.2.1 "
   },
   "scripts": {
     "test": "NODE_ENV=test ./node_modules/.bin/mocha && npm run coverage",
@@ -37,7 +37,6 @@
   "devDependencies": {
     "chai": "latest",
     "istanbul": "latest",
-    "jshint": "^2.8.0",
     "mocha": "latest",
     "mocha-istanbul": "latest",
     "mocha-lcov-reporter": "latest",

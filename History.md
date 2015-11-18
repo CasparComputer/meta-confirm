@@ -1,5 +1,9 @@
 ## Revision History
 
+### 0.0.12 -
+- test with node 4.2.1 and 4.2.2
+- 0.10.x deprecated
+
 ### 0.0.11 -
 - test coverage for request errors
 - test coverage for page not found through mocked instance
