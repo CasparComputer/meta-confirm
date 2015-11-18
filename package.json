@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "NODE_ENV=test ./node_modules/.bin/mocha && npm run coverage",
-    "lint": "jshint **.js examples/**.js test/**.js",
+    "lint": "jshint **.js test/**.js",
     "env": "env",
     "coveragebackup": "ISTANBUL_REPORTERS=text-summary,html istanbul instrument test --recursive --output ./lcov.info && istanbul cover **.js",
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha test",
@@ -32,7 +32,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "request": "~2.58.0"
+    "request": "~2.66.0"
   },
   "devDependencies": {
     "chai": "latest",
@@ -40,6 +40,6 @@
     "mocha": "latest",
     "mocha-istanbul": "latest",
     "mocha-lcov-reporter": "latest",
-    "sinon": "~1.15.4"
+    "sinon": "~1.17.2"
   }
 }
