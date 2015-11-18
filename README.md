@@ -12,6 +12,7 @@
 * Can be used as part of test framework (mocha example provided) to ensure meta tag quality during development.
 
 ## Note: 0.10.x versions of Node Support Deprecated during testing.
+## node 4.2.1 added to semver
 
 Depending on if you need as part of your testing framework or as part of an application, use the appropriate npm install:
 
