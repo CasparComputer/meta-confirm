@@ -32,7 +32,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "request": "~2.66.0"
+    "request": "~2.59.0"
   },
   "devDependencies": {
     "chai": "latest",
