@@ -11,7 +11,7 @@
 * Can be run as part of an application to check sites on an ongoing basis for quality.
 * Can be used as part of test framework (mocha example provided) to ensure meta tag quality during development.
 
-## Note: 0.10.x versions of Node Support Deprecated
+## Note: 0.10.x versions of Node Support Deprecated during testing.
 
 Depending on if you need as part of your testing framework or as part of an application, use the appropriate npm install:
 
