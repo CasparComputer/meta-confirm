@@ -1,12 +1,13 @@
 // metaConfirm.js
 
+"use strict";
+
 var exports = module.exports = {};
 var request = require('request');
 var validations = require('./lib/validations');
 
 
 function findInPage(completeUrl, searchMetaType, searchTag, searchContent, cb) {
-    "use strict";
 
     var nullErrorMessage = validations.checkForNullParameters(completeUrl, searchMetaType, searchTag, searchContent);
 
@@ -49,7 +50,6 @@ function findInPage(completeUrl, searchMetaType, searchTag, searchContent, cb) {
 
 
 function countMatchesInString(body, searchMetaType, searchTag, searchContent) {
-    "use strict";
 
     var specificTag = '<meta ' + searchMetaType + '="' + searchTag + '" content="' + searchContent + '">';
 
