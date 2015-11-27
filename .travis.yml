@@ -8,6 +8,7 @@ node_js:
   - "iojs-v1.0.4"
   - "4.2.1"
   - "4.2.2"
+  - "5.1"
 
 before_install:
   - npm install jshint@2.8.0 -g
