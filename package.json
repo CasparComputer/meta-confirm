@@ -1,6 +1,6 @@
 {
   "name": "meta-confirm",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "meta-confirm was intended to allow a simple way to test or confirm the existence of specific meta tag and description on a web page",
   "main": "meta-confirm.js",
   "engines": {
