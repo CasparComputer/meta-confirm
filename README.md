@@ -3,8 +3,7 @@
 # meta-confirm
 
 [![Build Status](https://travis-ci.org/CasparComputer/meta-confirm.svg)](https://travis-ci.org/CasparComputer/meta-confirm)
-[![NPM Version](https://img.shields.io/npm/v/meta-confirm.svg?style=flat)](https://www.npmjs.org/package/meta-confirm)
-[![NPM Downloads](https://img.shields.io/npm/dm/meta-confirm.svg?style=flat)](https://www.npmjs.org/package/meta-confirm)
+
 
 ## meta-confirm.  Designed to do easy and quick testing of web pages for specific tags.
 
