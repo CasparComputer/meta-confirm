@@ -4,7 +4,7 @@
   "description": "meta-confirm was intended to allow a simple way to test or confirm the existence of specific meta tag and description on a web page",
   "main": "meta-confirm.js",
   "engines": {
-    "node": ">=0.11.15 <= 0.12.7 || >=5.5.0 "
+    "node": ">=0.11.15 <= 0.12.7 || >=5.5.99 "
   },
   "scripts": {
     "test": "NODE_ENV=test ./node_modules/.bin/mocha && npm run coverage",
