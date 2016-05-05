@@ -4,6 +4,7 @@
 
 [![Build Status](https://travis-ci.org/CasparComputer/meta-confirm.svg)](https://travis-ci.org/CasparComputer/meta-confirm)
 
+[View Build Queue in Travis CI](https://travis-ci.org/CasparComputer/meta-confirm)
 
 ## meta-confirm.  Designed to do easy and quick testing of web pages for specific tags.
 
