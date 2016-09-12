@@ -1,5 +1,8 @@
 ## Revision History
 
+### 0.0.18
+ - current development version
+ 
 ### 0.0.17
  - 6.5.0 added to tests
 
