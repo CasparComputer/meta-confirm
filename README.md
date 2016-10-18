@@ -17,6 +17,7 @@
 * node 5.1.0 and node 5.5.0 tested locally and with external app 
 * node 6.3.1 tested locally and with external app
 * node 6.5.0 tested locally and with external app
+* node 6.8.1 tested locally
 
 Depending on if you need as part of your testing framework or as part of an application, use the appropriate npm install:
 
