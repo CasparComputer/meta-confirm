@@ -11,13 +11,17 @@
 * Can be run as part of an application to check sites on an ongoing basis for quality.
 * Can be used as part of test framework (mocha example provided) to ensure meta tag quality during development.
 
+
 * Note: 0.10.x versions of Node Support Deprecated during testing.
+* Note: 0.11.x versions of Node Support Deprecated during testing.
 
 * node 4.2.1 and 4.2.2 added to semver and tested
 * node 5.1.0 and node 5.5.0 tested locally and with external app 
 * node 6.3.1 tested locally and with external app
 * node 6.5.0 tested locally and with external app
-* node 6.8.1 tested locally
+* node 6.9.1 tested locally and with external app
+* node 7.2.1 tested locally
+
 
 Depending on if you need as part of your testing framework or as part of an application, use the appropriate npm install:
 
