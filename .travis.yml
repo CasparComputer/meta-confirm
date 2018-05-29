@@ -23,8 +23,8 @@ notifications:
   email:
     - mike@caspar.com
 
-after_script:
-  - curl -sL https://raw.githubusercontent.com/travis-ci/artifacts/master/install | bash
-  - artifacts upload --bucket meta-confirm coverage
+addons:
+  artifacts: true
+
 
 
