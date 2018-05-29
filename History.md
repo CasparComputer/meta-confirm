@@ -3,8 +3,11 @@
 ### 0.0.18
  - package dependencies (request) updated to version ~2.79.0
  - 0.11.x deprecated from testing (use with caution)
- - 7.2.1 added to testing  
- 
+ - 7.2.1 added to testing
+ - 8.10.0 added to testing
+ - io.js removed from testing
+ - package dependencies (request) updated to version ~2.87.0
+
 ### 0.0.17
  - 6.5.0 added to tests
 
