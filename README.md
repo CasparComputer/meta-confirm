@@ -78,6 +78,4 @@ or
     });
 
 
-Coverage at ... http://s3.amazonaws.com/meta-confirm/index.html
-
 
