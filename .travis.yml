@@ -13,7 +13,7 @@ node_js:
   - "8.10.0"
 
 before_install:
-  - npm install jshint@latest -g
+  - npm install jshint@latest
 
 branches:
   only:
