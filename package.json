@@ -9,7 +9,7 @@
     "env": "env",
     "coveragebackup": "ISTANBUL_REPORTERS=text-summary,html istanbul instrument test --recursive --output ./lcov.info && istanbul cover **.js",
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha test",
-    "prepublish": "npm install jshint --global # also runs npm run prebuild",
+    "prepare": "npm install jshint --global # also runs npm run prebuild",
     "prebuild": "npm run test # also runs npm run pretest",
     "pretest": "jshint **.js examples/**.js test/**.js"
   },
