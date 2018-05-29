@@ -15,6 +15,7 @@
 * Note: 0.10.x versions of Node Support Deprecated during testing.
 * Note: 0.11.x versions of Node Support Deprecated during testing.
 * Note: 4.2.x versions of Node Support Deprecated during testing.
+* Note: io.js versions of Node Support Deprecated during testing.
 
 * node 5.1.0 and node 5.5.0 tested locally and with external app
 * node 6.3.1 tested locally and with external app
