@@ -23,8 +23,7 @@ notifications:
   email:
     - mike@caspar.com
 
-addons:
-  artifacts: true
+
 
 
 
