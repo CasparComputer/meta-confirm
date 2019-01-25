@@ -1,5 +1,18 @@
 ## Revision History
 
+### 0.2.0
+ - adjusted for cross-platform development
+ - 8.15.0, 9.11.2, 10.15.0, 11.7.0 added to testing
+ - recommend new pattern: test on latest releases of all node major versions (4 and higher)
+
+### 0.1.0
+ - s3 coverage removed
+
+### 0.0.19
+ - 8.10.0 added to testing
+ - io.js removed from testing
+ - package dependencies (request) updated to version ~2.87.0
+
 ### 0.0.19
  - 8.10.0 added to testing
  - io.js removed from testing

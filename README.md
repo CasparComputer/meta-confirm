@@ -16,14 +16,19 @@
 * Note: 0.11.x versions of Node Support Deprecated during testing.
 * Note: 4.2.x versions of Node Support Deprecated during testing.
 * Note: io.js versions of Node Support Deprecated during testing.
+* Note: 4.6.x versions of Node Support Deprecated during testing.
+* Note: 8.10.x versions of Node Support Deprecated during testing.
 
 * node 5.1.0 and node 5.5.0 tested locally and with external app
 * node 6.3.1 tested locally and with external app
 * node 6.5.0 tested locally and with external app
 * node 6.9.1 tested locally and with external app
 * node 7.2.1 tested locally and with external app
-* node 8.10.0 testing started
-
+* node 8.10.0 tested locally and with external app
+* node 8.15.0 testing started
+* node 9.11.2 testing started
+* node 10.15.0 testing started
+* node 11.7.0 testing started
 
 Depending on if you need as part of your testing framework or as part of an application, use the appropriate npm install:
 
