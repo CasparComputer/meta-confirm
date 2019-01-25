@@ -1,0 +1,9 @@
+"use strict";
+var __cov_J8WZYgkTWHrXT2iLavgUTg = (Function('return this'))();
+if (!__cov_J8WZYgkTWHrXT2iLavgUTg.__coverage__) { __cov_J8WZYgkTWHrXT2iLavgUTg.__coverage__ = {}; }
+__cov_J8WZYgkTWHrXT2iLavgUTg = __cov_J8WZYgkTWHrXT2iLavgUTg.__coverage__;
+if (!(__cov_J8WZYgkTWHrXT2iLavgUTg['C:\\Users\\david\\Documents\\GitHub\\meta-confirm\\test\\environmentInfo.js'])) {
+   __cov_J8WZYgkTWHrXT2iLavgUTg['C:\\Users\\david\\Documents\\GitHub\\meta-confirm\\test\\environmentInfo.js'] = {"path":"C:\\Users\\david\\Documents\\GitHub\\meta-confirm\\test\\environmentInfo.js","s":{"1":0,"2":0,"3":0,"4":0,"5":0},"b":{},"f":{"1":0,"2":0,"3":0},"fnMap":{"1":{"name":"(anonymous_1)","line":3,"loc":{"start":{"line":3,"column":28},"end":{"line":3,"column":40}}},"2":{"name":"(anonymous_2)","line":5,"loc":{"start":{"line":5,"column":59},"end":{"line":5,"column":75}}},"3":{"name":"(anonymous_3)","line":9,"loc":{"start":{"line":9,"column":69},"end":{"line":9,"column":85}}}},"statementMap":{"1":{"start":{"line":3,"column":0},"end":{"line":13,"column":3}},"2":{"start":{"line":5,"column":4},"end":{"line":7,"column":7}},"3":{"start":{"line":6,"column":8},"end":{"line":6,"column":15}},"4":{"start":{"line":9,"column":4},"end":{"line":11,"column":7}},"5":{"start":{"line":10,"column":8},"end":{"line":10,"column":15}}},"branchMap":{}};
+}
+__cov_J8WZYgkTWHrXT2iLavgUTg = __cov_J8WZYgkTWHrXT2iLavgUTg['C:\\Users\\david\\Documents\\GitHub\\meta-confirm\\test\\environmentInfo.js'];
+__cov_J8WZYgkTWHrXT2iLavgUTg.s['1']++;describe('current process',function(){__cov_J8WZYgkTWHrXT2iLavgUTg.f['1']++;__cov_J8WZYgkTWHrXT2iLavgUTg.s['2']++;it('NODE_ENV is set to "'+process.env.NODE_ENV+'"',function(done){__cov_J8WZYgkTWHrXT2iLavgUTg.f['2']++;__cov_J8WZYgkTWHrXT2iLavgUTg.s['3']++;done();});__cov_J8WZYgkTWHrXT2iLavgUTg.s['4']++;it('ISTANBUL_REPORTERS is set to "'+process.env.NODE_ENV+'"',function(done){__cov_J8WZYgkTWHrXT2iLavgUTg.f['3']++;__cov_J8WZYgkTWHrXT2iLavgUTg.s['5']++;done();});});
