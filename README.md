@@ -11,25 +11,6 @@
 * Can be run as part of an application to check sites on an ongoing basis for quality.
 * Can be used as part of test framework (mocha example provided) to ensure meta tag quality during development.
 
-
-* Note: 0.10.x versions of Node Support Deprecated during testing.
-* Note: 0.11.x versions of Node Support Deprecated during testing.
-* Note: 4.2.x versions of Node Support Deprecated during testing.
-* Note: io.js versions of Node Support Deprecated during testing.
-* Note: 4.6.x versions of Node Support Deprecated during testing.
-* Note: 8.10.x versions of Node Support Deprecated during testing.
-
-* node 5.1.0 and node 5.5.0 tested locally and with external app
-* node 6.3.1 tested locally and with external app
-* node 6.5.0 tested locally and with external app
-* node 6.9.1 tested locally and with external app
-* node 7.2.1 tested locally and with external app
-* node 8.10.0 tested locally and with external app
-* node 8.15.0 testing started
-* node 9.11.2 testing started
-* node 10.15.0 testing started
-* node 11.7.0 testing started
-
 Depending on if you need as part of your testing framework or as part of an application, use the appropriate npm install:
 
     npm install meta-confirm --save-dev
@@ -83,4 +64,12 @@ or
     });
 
 
+##Module History and Version Support
 
+Each published version of meta-confirm is tested with currently-supported versions of Node. (LTS versions.)
+
+Each published version of meta-confirm is tested with currently-supported versions of Node. (LTS versions.) Long-term Support schedules are published by the Node.js Foundation Release Working Group [here](https://github.com/nodejs/Release).
+
+meta-confirm may continue to work on older versions of Node.js indefinately; but we do not test, nor recommend that you use older versions.
+
+To see which versions of Node we test on, in both Windows and Linux environments, see our [Travis-CI build record](https://travis-ci.org/CasparComputer/meta-confirm).

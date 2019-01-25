@@ -1,9 +1,12 @@
 ## Revision History
 
+### 0.2.1
+- Adjusted Node.js versions for Travis-CI tests
+
 ### 0.2.0
  - adjusted for cross-platform development
  - 8.15.0, 9.11.2, 10.15.0, 11.7.0 added to testing
- - recommend new pattern: test on latest releases of all node major versions (4 and higher)
+ - recommend new pattern: test on latest releases of all LTS families which are still [actively maintained](https://github.com/nodejs/Release).
 
 ### 0.1.0
  - s3 coverage removed
