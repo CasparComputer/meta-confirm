@@ -15,7 +15,8 @@ before_install:
   - npm install jshint@latest
 
 install:
-  - npm ci
+  # - npm ci
+  - npm install
 
 branches:
   only:
