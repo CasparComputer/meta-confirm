@@ -1,7 +1,12 @@
 ## Revision History
 
+### 0.2.2
+- updated the "request" module due to security vulnerability in 2.87.0 dependency
+- new version of "request" module is incompabitle with node versions older than 6 (beyond LTS schedule anyways)
+- so node versions older than 6.9.1 have been removed from testing
+
 ### 0.2.1
-- Adjusted Node.js versions for Travis-CI tests
+- adjusted Node.js versions for Travis-CI tests
 
 ### 0.2.0
  - adjusted for cross-platform development
