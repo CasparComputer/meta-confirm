@@ -1,5 +1,11 @@
 ## Revision History
 
+### 0.3.1
+- updated the dependencies reported in package-lock.json because js-yaml and handlebars were reported to have new vulnerabilities
+
+### 0.3.0
+- updated the version to reflect magnitude of recent change (of "request" module)
+
 ### 0.2.2
 - updated the "request" module due to security vulnerability in 2.87.0 dependency
 - new version of "request" module is incompabitle with node versions older than 6 (beyond LTS schedule anyways)
