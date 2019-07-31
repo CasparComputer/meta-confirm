@@ -1,5 +1,3 @@
-
-
 # meta-confirm
 
 [![Build Status](https://travis-ci.org/CasparComputer/meta-confirm.svg)](https://travis-ci.org/CasparComputer/meta-confirm)
@@ -13,10 +11,15 @@
 
 Depending on if you need as part of your testing framework or as part of an application, use the appropriate npm install:
 
-    npm install meta-confirm --save-dev
+```
+npm install meta-confirm --save-dev
+```
+
 or
 
-    npm install meta-confirm --save
+```
+npm install meta-confirm --save
+```
      
 ##Using the module (application)
     

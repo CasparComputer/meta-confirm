@@ -1,5 +1,11 @@
 ## Revision History
 
+### 0.4.0
+- updated the dependencies reported in package-lock.json because lodash was reported to have new vulnerabilities
+- 12.7.0 added to testing
+- node versions older than 8.15.0 have been removed from testing
+- node version 10.15.0 removed from testing
+
 ### 0.3.1
 - updated the dependencies reported in package-lock.json because js-yaml and handlebars were reported to have new vulnerabilities
 
@@ -9,7 +15,7 @@
 ### 0.2.2
 - updated the "request" module due to security vulnerability in 2.87.0 dependency
 - new version of "request" module is incompabitle with node versions older than 6 (beyond LTS schedule anyways)
-- so node versions older than 6.9.1 have been removed from testing
+- node versions older than 6.9.1 have been removed from testing
 
 ### 0.2.1
 - adjusted Node.js versions for Travis-CI tests
