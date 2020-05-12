@@ -1,6 +1,10 @@
 ## Revision History
 
-### 0.5.0 (Coming soon)
+### 0.5.1
+- rebuild for updated the dependencies
+- 12.16.1 added to testing
+
+### 0.5.0
 - updated the dependencies reported in package-lock.json because lodash was reported to have new vulnerabilities
 - node version 8.15.0 removed from testing (it is no longer in LTS support)
 - 12.7.10 added to testing
