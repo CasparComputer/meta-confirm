@@ -1,5 +1,12 @@
 ## Revision History
 
+### 0.5.3
+- rebuild for updated the dependencies
+- 14.16.1 added to testing
+
+### 0.5.2
+- rebuild for updated the dependencies
+
 ### 0.5.1
 - rebuild for updated the dependencies
 - 12.16.1 added to testing
