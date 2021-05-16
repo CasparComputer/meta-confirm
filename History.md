@@ -1,14 +1,18 @@
 ## Revision History
 
+### 0.5.4
+- updated to npm 7 (see changes to package-lock.json)
+- rebuild for updated dependencies
+
 ### 0.5.3
-- rebuild for updated the dependencies
+- rebuild for updated dependencies
 - 14.16.1 added to testing
 
 ### 0.5.2
-- rebuild for updated the dependencies
+- rebuild for updated dependencies
 
 ### 0.5.1
-- rebuild for updated the dependencies
+- rebuild for updated dependencies
 - 12.16.1 added to testing
 
 ### 0.5.0
