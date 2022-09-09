@@ -1,5 +1,10 @@
 ## Revision History
 
+### 0.5.5
+- removed node versions <14.16.1 from testing (they are no longer in LTS support)
+- 14.20.0, 16.17.0, 18.9.0 added to testing
+- rebuild for updated dependencies, and 1 security vulnerability
+
 ### 0.5.4
 - updated to npm 7 (see changes to package-lock.json)
 - rebuild for updated dependencies

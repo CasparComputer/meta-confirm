@@ -1,9 +1,9 @@
 # meta-confirm
 
-[![Build Status](https://travis-ci.org/CasparComputer/meta-confirm.svg)](https://travis-ci.org/CasparComputer/meta-confirm)
+<!-- [![Build Status](https://travis-ci.org/CasparComputer/meta-confirm.svg)](https://travis-ci.org/CasparComputer/meta-confirm)
 
 [View Build Queue in Travis CI](https://travis-ci.org/CasparComputer/meta-confirm)
-
+ -->
 ## meta-confirm.  Designed to do easy and quick testing of web pages for specific tags.
 
 * Can be run as part of an application to check sites on an ongoing basis for quality.
@@ -73,6 +73,6 @@ Each published version of meta-confirm is tested with currently-supported versio
 
 Each published version of meta-confirm is tested with currently-supported versions of Node. (LTS versions.) Long-term Support schedules are published by the Node.js Foundation Release Working Group [here](https://github.com/nodejs/Release).
 
-meta-confirm may continue to work on older versions of Node.js indefinately; but we do not test nor recommend that you use older versions.
+meta-confirm may continue to work on older versions of Node.js indefinitely; but we do not test nor recommend that you use older versions.
 
-To see which versions of Node we test on, in both Windows and Linux environments, see our [Travis-CI build record](https://travis-ci.org/CasparComputer/meta-confirm).
+<!-- To see which versiofns of Node we test on, in both Windows and Linux environments, see our [Travis-CI build record](https://travis-ci.org/CasparComputer/meta-confirm). -->
